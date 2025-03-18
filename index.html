@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Elements Implementation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, select, button {
+            display: block;
+            margin-top: 10px;
+            padding: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>HTML5 Elements Implementation</h2>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h3>Ordered List (Roman Numerals)</h3>
+    <ol type="I">
+        <li>Introduction to HTML5</li>
+        <li>Understanding Lists</li>
+        <li>Working with Tables</li>
+        <li>Form Elements and Input Types</li>
+        <li>Embedding Multimedia</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h3>External Image</h3>
+    <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg" alt="Beautiful Scenery from Pexels">
+
+    <!-- Contacts Table -->
+    <h3>Contacts Table</h3>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>John Daniel</td>
+            <td>123 Gloove St, NG</td>
+            <td>+2347087220644</td>
+            <td>johndaniel@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Jane Smooth</td>
+            <td>45 Peace ave, NG</td>
+            <td>+2348063293382</td>
+            <td>janesmooth@yahoo.com</td>
+        </tr>
+        <tr>
+            <td>Mike Johnson</td>
+            <td>78 Green Rd, NG</td>
+            <td>+2347030403209</td>
+            <td>mikejohnson@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Sarah Moses</td>
+            <td>89 Best St, NG</td>
+            <td>+2348062208160</td>
+            <td>sarahmoses@yahoo.com</td>
+        </tr>
+        <tr>
+            <td>Emma Brown</td>
+            <td>56 View St, NG</td>
+            <td>+2347087220644</td>
+            <td>emmabrown@gmail.com</td>
+        </tr>
+    </table>
+
+    <!-- Registration Form -->
+    <h3>Registration Form</h3>
+    <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required minlength="6">
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <!-- Dropdown -->
+        <label for="country">Select Your Country:</label>
+        <select id="country" name="country" required>
+            <option value="">--Select--</option>
+            <option value="ng">NG</option>
+            <option value="uk">UK</option>
+            <option value="canada">Canada</option>
+            <option value="australia">Australia</option>
+        </select>
+
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label>
+
+        <!-- Checkboxes -->
+        <label>Interests:</label>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label>
+
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label>
+
+        <input type="checkbox" id="reading" name="interests" value="reading">
+        <label for="reading">Reading</label>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- Multimedia Elements -->
+    <h3>Audio & Video</h3>
+    
+    <h4>Audio</h4>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h4>Video</h4>
+    <video width="100%" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+</div>
+
+</body>
+</html>
